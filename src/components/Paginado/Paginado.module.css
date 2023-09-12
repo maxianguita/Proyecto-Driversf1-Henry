@@ -1,0 +1,60 @@
+.paginadoNum {
+display: flex;
+flex-direction: column;
+
+    color: black;
+    background-color: antiquewhite;
+}
+
+.paginadoContainer {
+    display: flex;
+     justify-content: center; 
+  }
+  
+  .paginadoList {
+    list-style-type: none;
+    display: flex;
+    gap: 10px;
+  }
+  
+  .paginadoItem {
+    width: 100px;
+    text-align: center;
+  }
+  
+  .paginadoItem a {
+    display: block;
+    padding: 2px;
+    background-color: #05605c;
+    color: #000000;
+    text-decoration: none;
+    border-radius: 20px;
+  }
+  
+  .paginadoItem a:hover {
+    background-color: #ffffff;
+  }
+  
+  .paginadoItem.active a {
+    background-color: #f3ecec;
+    color: #000000;
+  }
+
+/* Estilos para tablet */
+@media (max-width: 768px) {
+  .paginadoNum {
+    flex-direction: row; /* Cambiar a disposición horizontal */
+    justify-content: center; /* Centrar horizontalmente */
+    align-items: center; /* Centrar verticalmente */
+    background-color: transparent; /* Eliminar el fondo */
+  }
+
+  .paginadoList {
+    gap: 5px; /* Reducir el espacio entre los elementos */
+  }
+
+  .paginadoItem {
+    width: auto; /* Ancho automático */
+    margin: 0 2px; /* Ajustar los márgenes */
+  }
+}

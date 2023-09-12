@@ -1,0 +1,114 @@
+/* LandingPage.module.css */
+.container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.videoBackground {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1; /* Asegura que el video esté detrás del texto */
+}
+
+.landingBox {
+  background-color: rgba(0, 0, 0, 0);
+  padding: 2rem;
+  text-align: center;
+  border-radius: 8px;
+  max-width: 80%; /* Limita el ancho máximo para tabletas */
+  position: relative;
+  z-index: 2; /* Asegura que el texto esté sobre el video */
+}
+
+.title {
+  color: white;
+  font-size: 2rem;
+  margin-bottom: 1rem; /* Reducido el margen inferior para tabletas */
+  position: relative;
+  z-index: 2; /* Asegura que el texto esté sobre el video */
+}
+
+.buttonLink {
+  text-decoration: none;
+}
+
+.cta {
+  background-color: #020202;
+  color: white;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.cta:hover {
+  background-color: #027a62;
+}
+
+.span {
+  margin-right: 10px;
+}
+
+.second {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-color: white;
+  border-radius: 50%;
+  animation: bounce 1s infinite;
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-20px);
+  }
+  60% {
+    transform: translateY(-10px);
+  }
+}
+
+/* Estilos para dispositivos de tableta */
+@media screen and (max-width: 768px) {
+  .container {
+    height: auto; 
+    
+  }
+
+  .landingBox {
+    max-width: 90%; /* Reduce el ancho máximo en tabletas */
+  }
+
+  .title {
+    font-size: 1.5rem; 
+    margin-bottom: 90px;
+  }
+
+  /* Estilos para el video en modo tableta */
+  .videoBackground {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 250%;
+    object-fit: cover;
+    z-index: 1;
+  }
+}
+

@@ -1,0 +1,126 @@
+.divPadre {
+  display: flex;
+  flex-direction: column;
+  font-family: Arial, sans-serif;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: rgba(255, 254, 254, 0);
+}
+
+.divFragment {
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.divSelects {
+  max-width: 750px;
+  margin-top: 20px; /* Ajustamos el margen superior */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding-top: 150px;
+}
+
+.cardsContainer {
+  font-family: Arial, sans-serif;
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  overflow-y: auto;
+  overflow-x: auto;
+}
+
+ .divSelects select {
+  color: black;
+  width: 150px;
+  padding: 1px;
+  margin: 10px;
+} 
+
+h4 {
+  color: rgb(0, 0, 0);
+  padding-bottom: 5px;
+  margin-bottom: 5px;
+}
+
+/* div {
+  padding-bottom: 10px;
+} */
+
+.botonCrear {
+  width: 100%; /* Cambiamos el ancho para adaptarlo al contenedor */
+  max-width: 300px; /* Limitamos el ancho máximo */
+  padding: 8px 16px;
+  border: 2px solid black;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.botonCrear a {
+  color: white;
+  text-decoration: none;
+}
+
+.botonCrear:hover {
+  background-color: white;
+  color: black;
+}
+
+.botonCrear:hover a {
+  color: black;
+}
+
+.botonCargar {
+  margin: 20px;
+  background-color: rgb(0, 0, 0);
+  color: white;
+  transition: box-shadow 0.6s ease-in-out;
+}
+
+.botonCargar:hover {
+  box-shadow: 0px 0px 500px rgb(255, 255, 255);
+}
+
+.alertContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.alert {
+  border: 1px solid white;
+  border-radius: 5px;
+  width: 100%; /* Ajustamos el ancho */
+  max-width: 750px; /* Limitamos el ancho máximo */
+  justify-content: center;
+  align-items: center;
+  color: red;
+  background-color: hsl(0, 0%, 80%);
+}
+
+/* Reglas de medios para hacer responsive */
+@media (max-width: 768px) {
+  .cardsContainer {
+    justify-content: flex-start; /* Cambiamos a alineación horizontal */
+    padding: 10px; /* Agregamos un espacio interno */
+  }
+  
+  .divSelects {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .divSelects select {
+    width: 100%;
+    margin: 10px 0;
+  }
+}

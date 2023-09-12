@@ -1,0 +1,60 @@
+.containerLoading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; /* Coloca los elementos en columna */
+    margin-top: 20px; /* Ajusta el margen superior según tu diseño */
+  }
+  
+  .containerLoading img {
+    /* Ajusta los márgenes y el ancho de la imagen según tu diseño */
+    margin: 10px auto; /* Margen en todos los lados (centrado horizontalmente) */
+    width: 180px; /* Ancho deseado de la imagen */
+  }
+  
+  /* Media queries para ajustar los estilos en pantallas más pequeñas */
+  @media (max-width: 1543px) {
+    .containerLoading img {
+      margin-right: 250px; /* Ajusta el margen derecho según tu diseño */
+    }
+  }
+  
+  @media (max-width: 1280px) {
+    .containerLoading img {
+      margin-right: 50px; /* Ajusta el margen derecho según tu diseño */
+      width: 180px; /* Ancho deseado de la imagen */
+    }
+  }
+  
+  @media (min-width: 1025px) and (max-width: 1145px) {
+    .containerLoading {
+      margin-left: 140px; /* Ajusta el margen izquierdo según tu diseño */
+    }
+  }
+  
+  @media (min-width: 900px) and (max-width: 1024px) {
+    .containerLoading {
+      margin-left: 90px; /* Ajusta el margen izquierdo según tu diseño */
+    }
+  }
+  
+  @media (min-width: 655px) and (max-width: 900px) {
+    .containerLoading {
+      margin-left: 70px; /* Ajusta el margen izquierdo según tu diseño */
+    }
+  }
+  
+  @media (max-width: 655px) {
+    .containerLoading {
+      margin-right: 240px; /* Ajusta el margen derecho según tu diseño */
+    }
+  }
+  
+  @media (min-width: 300px) and (max-width: 540px) {
+    .containerLoading {
+      margin-left: 380px; /* Ajusta el margen izquierdo según tu diseño */
+      margin-bottom: 50px; /* Ajusta el margen inferior según tu diseño */
+      width: 50px; /* Ancho deseado del contenedor */
+    }
+  }
+  

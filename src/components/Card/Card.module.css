@@ -1,0 +1,66 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 145px; /* Reducir el ancho máximo */
+  height: 400px; /* Reducir la altura */
+  margin: 30px; /* Reducir el margen para separar las tarjetas */
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.962);
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0);
+  transition: box-shadow 0.3s ease-in-out, background-color 0.3s ease-in-out;
+  color: aliceblue;
+  list-style: none;
+  text-decoration: none;
+}
+
+/* Ajustar el margen para separar las tarjetas */
+.card + .card {
+  margin-top: 20px;
+}
+
+/* Resto de estilos sin cambios */
+
+
+.card:hover {
+  box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.3);
+  background-color: rgba(255, 255, 255, 0.986);
+}
+
+.title {
+  font-size: 20px;
+  margin: 10px 0;
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  list-style: none;
+}
+
+.teams {
+  font-size: 14px;
+  margin-bottom: 10px;
+  color: #000000;
+  font-weight: bold;
+}
+
+.dob {
+  font-size: 14px;
+  margin: 10px 0;
+  color: #000000;
+}
+
+.image {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .card {
+    max-width: 100%;
+  }
+}

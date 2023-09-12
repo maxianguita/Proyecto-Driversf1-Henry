@@ -1,0 +1,134 @@
+.divDetail {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0);
+    
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    color: aliceblue;
+    padding: 20px;
+  }
+  
+  .bottomButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .leftColumn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('https://i.pinimg.com/564x/8e/57/30/8e5730ea86e07a647e79eec9f08a7b9c.jpg');
+    margin: 10px;
+    padding: 20px;
+    width: calc(100% - 40px); 
+    border-radius: 5px;
+  }
+  
+  .imgDriver {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    object-fit: contain;
+    border-radius: 10%;
+  }
+  
+  .rightColumn {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.98);
+    margin: 20px 0;
+    transition: 1s;
+    width: 80%; 
+    border-radius: 30px;
+}
+
+  
+  .rightColumn:hover {
+    box-shadow: 0px 0px 300px rgb(6, 6, 6);
+    background-color: rgba(3, 122, 67, 0.821);
+    color: white;
+  }
+  
+  .rightColumn h3 {
+    font-size: large;
+  }
+  
+  .divDetail h2 {
+    text-align: left;
+    font-size: 15px;
+    margin: 10px 0;
+  }
+  
+  .divDetail h2 button {
+    margin-top: 10px;
+  }
+  
+  .teamsDiv {
+    text-align: center;
+  }
+  
+  .description {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    max-width: 100%;
+    margin-top: 20px;
+  }
+  
+
+
+.detailContainer {
+  display: flex;
+  flex-direction: column; 
+  align-items: center; 
+  margin-top: 20px; 
+  margin: 50px;
+}
+
+
+.containerLoading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; 
+  margin-top: 20px; 
+}
+
+.containerLoading img {
+  margin: 10px auto; 
+  width: 180px; 
+}
+
+/* Estilos para el componente de carga en tabletas */
+@media (max-width: 1024px) {
+  .containerLoading {
+    margin-top: 0; 
+    height: 100vh; 
+    justify-content: center; 
+  }
+
+  .containerLoading img {
+    margin: 10px auto; 
+    width: 180px;
+  }
+}
+
+/* Estilos para tabletas en el detalle */
+@media (max-width: 1024px) {
+  .detailContainer {
+    margin-top: 0;
+  }
+
+  .leftColumn,
+  .rightColumn {
+    width: 100%; 
+  }
+}

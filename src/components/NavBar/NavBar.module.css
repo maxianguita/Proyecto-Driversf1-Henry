@@ -1,0 +1,57 @@
+.divContenedorSearchBar {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  background-color: #037872;
+  height: 70px; /* Aumenta la altura para dar más espacio vertical */
+  width: 100%;
+  display: flex;
+  align-items: center; 
+  justify-content: space-between; 
+  padding: 0 20px; 
+  z-index: 0;
+  font-weight: bold;
+  border: solid;
+}
+
+.logoLink {
+  background-color: #037872;
+  text-decoration: none;
+}
+
+.logo {
+  background-color: #037872;
+  max-height: 50px;
+  width: auto; /* Ajusta el ancho automáticamente */
+}
+
+.botonesNav {
+  color: aliceblue;
+  border-radius: 5px;
+  border-style: none;
+  height: 40px;
+  background-color: transparent;
+  transition: 0.5s;
+  margin: 0 10px; /* Espaciado horizontal entre botones */
+}
+
+.botonesNav:hover {
+  background-color: rgba(255, 255, 255, 0);
+}
+/* Estilos para tablet */
+@media (max-width: 768px) {
+  .divContenedorSearchBar {
+    width: 100%; 
+    justify-content: center; 
+    padding: 5px; 
+    font-size: 16px; 
+  }
+
+  .botonesNav {
+    position: static; 
+    left: auto; 
+    margin: 5px; 
+    width: auto; 
+    height: auto; 
+    transition: none; 
+  }
+  
+}
